@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: switchbot-webhook
+    env: node
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    envVars:
+      - key: SWITCHBOT_TOKEN
+        value: dd11f27460f3c602e9a5cdfbdc902a2dd4cfa8454dd7e572d04f046d809d330549d6dfaea5a2a8044b1e1b3fbe40188b
+      - key: DEVICE_ID
+        value: DA:7C:CB:C0:5E:31
+      - key: SECURITY_KEY
+        value: c430392fc1d1e4cd1fac130416680db5
+      - key: ALLOWED_NUMBERS
+        value: "+16042596143"
